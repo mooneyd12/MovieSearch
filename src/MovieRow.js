@@ -11,7 +11,7 @@ class MovieRow extends React.Component {
 		const overview = this.props.movie.overview;
 		const slicedOverview = overview.slice(0, 100);
  		return <div key={this.props.movie.id} className="movie">
-		  <img key={this.props.movie.poster_path}className="movie-poster" alt="poster" width="120" src={this.props.movie.poster_src}/>
+		  <img key={this.props.movie.poster_path} className="movie-poster" alt="poster" src={this.props.movie.poster_src}/>
 		  <div className="movie-content">
 		    <h3 key={this.props.movie.title} className="movie-title">{this.props.movie.title}</h3>
 		    <p className="movie-overview">{slicedOverview}...</p>
