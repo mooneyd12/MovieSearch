@@ -60,7 +60,7 @@ class App extends Component {
 
         </table>
 
-        <input className="search-box" onChange={this.searchChangeHandler.bind(this)} placeholder="Enter Search"/>
+        <input className="search-box" onChange={this.searchChangeHandler.bind(this)} placeholder="Enter Search" aria-label="searchbutton"/>
 
         {this.state.rows}
         <Footer />
