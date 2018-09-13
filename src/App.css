@@ -69,6 +69,13 @@
   flex: 0 1 100%;
 }
 
+.movie-overview {
+  color: #636262;
+  font-family: helvetica;
+  line-height: 25px;
+
+}
+
 .view-btn {
   background-color: rgb(103, 232, 58);
   border: none;
@@ -111,7 +118,7 @@
   .movie:nth-child(odd){
     background-color: #fff;
   }
-  .movie:nth-child(3n+3){
+  .movie:nth-child(4n){
     background-color: #f0f0f0;
   }
 }
