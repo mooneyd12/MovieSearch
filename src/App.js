@@ -25,7 +25,7 @@ class App extends Component {
 
         results.forEach((movie) => {
           movie.poster_src = "https://image.tmdb.org/t/p/w200" + movie.poster_path;
-          const movieRow = <MovieRow movie={movie} />;
+          const movieRow = <MovieRow movie={movie} key={movie.id} />;
           movieRows.push(movieRow);
         })
 
