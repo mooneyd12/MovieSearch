@@ -25,7 +25,6 @@ class App extends Component {
 
         results.forEach((movie) => {
           movie.poster_src = "https://image.tmdb.org/t/p/w200" + movie.poster_path;
-          console.log(movie.poster_src);
           const movieRow = <MovieRow movie={movie} />;
           movieRows.push(movieRow);
         })
@@ -39,7 +38,6 @@ class App extends Component {
   }
 
   searchChangeHandler(event){
-    console.log(event.target.value);
     const boundObject = this;
     const searchTerm = event.target.value;
     boundObject.performSearch(searchTerm);
@@ -52,7 +50,7 @@ class App extends Component {
           <tbody>
             <tr>
               <td>
-               <img class="brand-logo" alt="app icon" width="50" src="./moviedb_logo.png"/>
+               <img className="brand-logo" alt="app icon" width="50" src="./moviedb_logo.png"/>
               </td>
               <td>
                 <h2 id="brand-name">MovieDB Search</h2>
