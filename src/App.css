@@ -8,9 +8,9 @@
   -ms-flex-direction: row;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-between;
-  -ms-align-items: space-between;
-  align-items: space-between;
+  justify-content: stretch;
+  -ms-align-items: stretch;
+  align-items: stretch;
 }
 
 .titleBar {
@@ -40,6 +40,7 @@
   display: flex;
   justify-content: flex-start;
   position: relative;
+  width: 100%;
 }
 
 .movie:nth-child(odd) {
@@ -47,6 +48,7 @@
 }
 
 .movie-poster {
+  background-color: #ddd;
   height: 300px;
   -ms-align-self: flex-start;
   align-self: flex-start;
